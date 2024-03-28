@@ -1,0 +1,432 @@
+body {
+  margin: 0;
+}
+* {
+  scroll-behavior: smooth;
+}
+html {
+  font-family: 'Roboto Slab', serif;
+}
+/* nav */
+
+.main_nav {
+  width: 100%;
+  background-color: white;
+  position: relative;
+  z-index: 10;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.main_nav img {
+  width: 40px;
+  margin: 10px;
+  position: absolute;
+}
+.nav_item {
+  padding-left: 120px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.main_nav li {
+  display: inline;
+  margin-right: 50px;
+  margin-bottom: 10px;
+  list-style: none;
+}
+.nav_item a {
+  color: black;
+  text-decoration: none;
+}
+.nav_item a:hover {
+  color: red;
+  text-decoration: none;
+}
+.auth {
+  float: right;
+}
+.toggele {
+  float: right;
+  margin-right: 30px;
+  margin-top: 10px;
+  display: none;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.toggele_btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: rgb(255, 0, 0);
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.a {
+  width: full;
+  height: 1px;
+  margin-top: 5px;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+@media only screen and (max-width: 600px) {
+  .nav_item_content {
+    display: none;
+    animation-name: example;
+    animation-duration: 4s;
+  }
+  .main_nav li {
+    display: block;
+    opacity: 10;
+  }
+  .auth {
+    float: left;
+  }
+  .nav_item {
+    padding-left: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .toggele {
+    display: inline;
+  }
+}
+/* nav */
+.foots {
+  position: absolute;
+  margin-top: 50px;
+  z-index: 50;
+}
+.svgItems {
+  margin-top: 450px;
+  position: relative;
+  width: 100%;
+  z-index: 5;
+}
+@media only screen and (max-width: 1224px) {
+  .svgItems {
+    margin-top: 400px;
+  }
+}
+@media only screen and (max-width: 1132px) {
+  .svgItems {
+    margin-top: 350px;
+  }
+}
+@media only screen and (max-width: 981px) {
+  .svgItems {
+    margin-top: 300px;
+  }
+}
+@media only screen and (max-width: 864px) {
+  .svgItems {
+    margin-top: 250px;
+  }
+}
+@media only screen and (max-width: 747px) {
+  .svgItems {
+    margin-top: 200px;
+  }
+}
+@media only screen and (max-width: 624px) {
+  .svgItems {
+    margin-top: 150px;
+  }
+}
+@media only screen and (max-width: 608px) {
+  .svgItems {
+    margin-top: 140px;
+  }
+}
+@media only screen and (max-width: 595px) {
+  .svgItems {
+    margin-top: 75px;
+  }
+}
+
+/* carosal */
+
+.carosal img {
+  height: auto;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+#image2 {
+  z-index: 1;
+}
+
+/* carosal */
+.svgItems {
+  position: relative;
+  z-index: 4;
+  /* margin-top: 450px; */
+  width: 100%;
+}
+.mid_content {
+  background-color: white;
+  z-index: 5;
+  position: relative;
+  margin-top: 100px;
+}
+
+/* mid-cntent */
+
+.mid_content .watch {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: rgb(3, 251, 15) 0px 50px 100px -10px,
+    rgb(60, 100, 100) 20px 30px 60px -20px,
+    rgb(0, 4, 100) 0px -2px 48px 0px inset;
+  text-align: center;
+}
+
+.watch_sec {
+  position: absolute;
+  margin-top: 1.4cm;
+  margin-left: 7px;
+  width: 2px;
+  height: 140px;
+  background-color: rgb(77, 48, 48);
+  transform-origin: 0px 100px;
+  transform: rotate(0deg);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  z-index: 10;
+}
+.watch_min {
+  position: absolute;
+  margin-top: 1.6cm;
+  margin-left: 6px;
+  width: 4px;
+  height: 130px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  background-color: rgba(13, 4, 97, 0.938);
+  transform-origin: 2px 95px;
+  transform: rotate(0deg);
+  z-index: 9;
+}
+.watch_hr {
+  position: absolute;
+  margin-top: 2.3cm;
+  margin-left: 6px;
+  width: 7px;
+  height: 100px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  background-color: white;
+  box-shadow: rgb(255, 0, 0) 0px 50px 100px -40px,
+    rgb(255, 0, 0) 20px 30px 60px -20px,
+    rgb(255, 0, 0) 0px -2px 48px 0px inset;
+  transform-origin: 2px 65px;
+  transform: rotate(0deg);
+  z-index: 8;
+}
+.watch_dot {
+  z-index: 11;
+  position: absolute;
+  margin-top: 142px;
+  margin-left: -4px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.watch_small_dot {
+  z-index: 10;
+  position: absolute;
+  margin-top: 150px;
+  margin-left: 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+  z-index: 12;
+}
+.a12 {
+  position: absolute;
+  margin-top: 0.8cm;
+}
+.a1 {
+  position: absolute;
+  margin-top: 1.3cm;
+  margin-left: 1.7cm;
+}
+.a2 {
+  position: absolute;
+  margin-top: 2.2cm;
+  margin-left: 2.7cm;
+}
+.a3 {
+  position: absolute;
+  margin-top: 3.8cm;
+  margin-left: 3.2cm;
+}
+.a4 {
+  position: absolute;
+  margin-top: 5.3cm;
+  margin-left: 2.7cm;
+}
+.a5 {
+  position: absolute;
+  margin-top: 6.2cm;
+  margin-left: 1.5cm;
+}
+.a6 {
+  position: absolute;
+  margin-top: 6.8cm;
+}
+.a7 {
+  position: absolute;
+  margin-top: 6.5cm;
+  margin-left: -1.5cm;
+}
+.a8 {
+  position: absolute;
+  margin-top: 5.4cm;
+  margin-left: -2.6cm;
+}
+.a9 {
+  position: absolute;
+  margin-top: 3.8cm;
+  margin-left: -3.2cm;
+}
+.a10 {
+  position: absolute;
+  margin-top: 2.2cm;
+  margin-left: -2.7cm;
+}
+.a11 {
+  position: absolute;
+  margin-top: 1.1cm;
+  margin-left: -1.5cm;
+}
+
+/* mid-cntent */
+
+/* game_aria */
+.game_aria {
+  margin-top: 100px;
+  height: 500px;
+}
+
+.first_game {
+  position: relative;
+  width: 40%;
+  background-color: white;
+  margin: 50px;
+  padding: 10px;
+  padding-bottom: 5px;
+  float: left;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: background-color 2s;
+}
+.first_game:hover {
+  background-color: rgb(71, 159, 241);
+}
+
+@media only screen and (max-width: 1000px) {
+  .first_game {
+    position: relative;
+    width: 35%;
+    height: 200px;
+    background-color: white;
+    margin: 50px;
+    float: left;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .second_game {
+    float: right;
+    width: 35%;
+    height: 200px;
+    background-color: white;
+    margin: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .first_game {
+    position: relative;
+    width: 35%;
+    height: 200px;
+    background-color: white;
+    margin: 50px;
+    float: left;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .second_game {
+    float: right;
+    width: 35%;
+    height: 200px;
+    background-color: white;
+    margin: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+}
+@media only screen and (max-width: 660px) {
+  .first_game {
+    position: relative;
+    width: 35%;
+    height: 200px;
+    background-color: white;
+    margin: 50px;
+    float: left;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .second_game {
+    float: right;
+    width: 35%;
+    height: 200px;
+    background-color: white;
+    margin: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+}
+@media only screen and (max-width: 666px) {
+  .first_game {
+    position: relative;
+    width: 30%;
+    height: 200px;
+    background-color: white;
+    margin: 50px;
+    float: left;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .second_game {
+    float: right;
+    width: 30%;
+    height: 200px;
+    background-color: white;
+    margin: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .first_game {
+    float: none;
+    margin: 0 auto;
+    background-color: black;
+  }
+  .second_game {
+    float: none;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: black;
+  }
+}
+.first_game img {
+  width: 100%;
+  height: 300px;
+}
+

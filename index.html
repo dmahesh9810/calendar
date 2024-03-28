@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/watch.css" />
+    <link rel="stylesheet" href="css/calander.css" />
+  </head>
+  <body>
+    <div>
+      <!-- my old watch project include -->
+      <div>
+        <div class="main_nav">
+          <div>
+            <span class="toggele">
+              <button class="toggele_btn"></button>
+            </span>
+          </div>
+        </div>
+
+        <div>
+          <div class="mid_content">
+            <div class="watch">
+              <div class="time">
+                <span class="a12">12</span>
+                <span class="a1">1</span>
+                <span class="a2">2</span>
+                <span class="a3">3</span>
+                <span class="a4">4</span>
+                <span class="a5">5</span>
+                <span class="a6">6</span>
+                <span class="a7">7</span>
+                <span class="a8">8</span>
+                <span class="a9">9</span>
+                <span class="a10">10</span>
+                <span class="a11">11</span>
+              </div>
+              <span class="watch_dot"></span>
+              <span class="watch_small_dot"></span>
+              <span class="watch_sec"></span>
+              <span class="watch_min"></span>
+              <span class="watch_hr"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- calander assignment  -->
+      <div>
+        <div class="calander-section">
+          <table>
+            <tr>
+              <td class="calander-left">
+                <div class="calander">
+                  <br />
+                  <div class="calander-header">
+                    <div class="left-arrow">
+                      <table>
+                        <tr>
+                          <td>
+                            <button class="left-btn" id="left-btn">
+                              <img
+                                src="img/arrow.webp"
+                                alt=""
+                                srcset=""
+                                style="width: 100px"
+                              />
+                            </button>
+                          </td>
+                          <td>
+                            <div>
+                              <table class="top-month-year">
+                                <tr>
+                                  <td class="top-month-view">
+                                    <span id="top-month">March</span>
+                                  </td>
+                                  <td>
+                                    <span class="top-day" id="top-day">27</span
+                                    ><span> ,</span>
+                                  </td>
+                                  <td><span id="top-year">2024</span></td>
+                                </tr>
+                                <!-- <tr>
+                                  <td colspan="3" style="text-align: center">
+                                    <hr />
+                                    Thusday
+                                  </td>
+                                </tr> -->
+                              </table>
+                            </div>
+                          </td>
+                          <td>
+                            <button class="right-btn" id="right-btn">
+                              <img
+                                src="img/arrow.webp"
+                                alt=""
+                                srcset=""
+                                style="width: 100px"
+                              />
+                            </button>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <button id="left-btn" hidden>&lt;</button>
+                        <div class="month-year" id="monthYear" hidden></div>
+                        <button id="right-btn" hidden>&gt;</button>
+                  <div class="calander-view">
+                    <div class="calendar-grid-week" id="calendarGrid">
+                      <p>Su</p>
+                      <p>Mo</p>
+                      <p>Tu</p>
+                      <p>We</p>
+                      <p>Th</p>
+                      <p>Fr</p>
+                      <p>Sa</p>
+                    </div>
+                    <div class="calendar-grid-day" id="calendarGrid">
+                      <div class="header">
+                        
+                    </div>
+                    <div class="days" id="days"></div>
+                     
+                    </div>
+                    
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="todo"></div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div></div>
+
+    <script src="js/watch.js"></script>
+    <script src="js/calander.js"></script>
+  </body>
+</html>
